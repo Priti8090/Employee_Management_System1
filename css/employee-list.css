@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #36d1dc;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr {
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+tbody tr:hover {
+  background: #eef6ff;
+}
+
+tbody tr:nth-child(even) {
+  background: #f6f9fc;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  color: white;
+  font-size: 13px;
+}
+
+.employee {
+  background: #5b86e5;
+}
+
+.teamlead {
+  background: #28a745;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 13px;
+  }
+}

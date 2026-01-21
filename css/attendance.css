@@ -1,0 +1,84 @@
+body {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.topbar {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+  color: white;
+  padding: 16px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #36d1dc;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  width: 300px;
+  animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.popup-box h3 {
+  color: #36d1dc;
+  margin-bottom: 10px;
+}
+
+.popup-box button {
+  margin-top: 15px;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #36d1dc;
+  color: white;
+  cursor: pointer;
+}
