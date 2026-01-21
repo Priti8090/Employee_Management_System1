@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holiday & Calendar Dashboard</title>
+  <link rel="stylesheet" href="./css/holidays.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2>Holiday & Calendar Dashboard</h2>
+      <button id="toggleCalendar">View Calendar</button>
+    </header>
+
+    <section id="calendarSection" class="hidden">
+      <input type="month" id="monthPicker" />
+      <div id="calendar"></div>
+    </section>
+
+
+    <section class="card">
+      <h3>IT Sector Holidays</h3>
+      <ul id="holidayList"></ul>
+    </section>
+
+    <section class="card restricted">
+      <h3>Restricted Holidays</h3>
+      <ul id="restrictedList"></ul>
+    </section>
+  </div>
+ 
+  <script src="./js/holidays.js"></script>
+</body>
+</html>

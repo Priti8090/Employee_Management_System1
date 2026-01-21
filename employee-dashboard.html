@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Dashboard</title>
+  <link rel="stylesheet" href="./css/employee-dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="topbar">
+  <span id="employeeName"></span>
+</header>
+
+<section class="dashboard">
+
+  <div class="card">
+    <h3>Attendance Overview</h3>
+    <canvas id="attendanceChart"></canvas>
+    <button onclick="goToAttendance()">Mark Today's Attendance</button>
+  </div>
+
+  <div class="card">
+    <h3>Leave Balance</h3>
+    <p><strong>Taken:</strong> <span id="leaveTaken"></span></p>
+    <p><strong>Remaining:</strong> <span id="leaveRemaining"></span></p>
+    <button onclick="goToLeave()">Raise Leave Request</button>
+  </div>
+
+  <div class="card">
+    <h3>Salary Summary</h3>
+    <canvas id="salaryChart"></canvas>
+    <button class="salary-btn" onclick="goToSalary()">View Salary Slip</button>
+  </div>
+
+</section>
+<footer class="dashboard-footer">
+  <button class="holiday-footer-btn" onclick="goToHolidays()">
+    📅 View Holidays & Calendar
+  </button>
+</footer>
+
+<script src="./js/employee-dashboard.js"></script>
+</body>
+</html>

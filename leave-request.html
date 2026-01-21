@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leave Management</title>
+  <link rel="stylesheet" href="./css/leave-request.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h2><p id="empInfo"></p></h2>
+      
+    </header>
+<section class="card">
+  <h3>Request a Leave</h3>
+  <form id="leaveForm">
+    <input type="text" id="empName" placeholder="Employee Name" required />
+    <input type="text" id="empId" placeholder="Employee ID" required />
+   <pre> Start     <input type="date" id="startDate" required /></pre>
+    <pre> End     <input type="date" id="endDate" required /></pre>
+    <textarea id="reason" placeholder="Reason for Leave" required></textarea>
+    <button type="submit">Submit Leave Request</button>
+  </form>
+</section>
+
+
+<section class="card">
+  <h3>Leave History</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Days</th>
+        <th>Status</th>
+        <th>Approved / Rejected By</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="leaveHistory"></tbody>
+  </table>
+</section>
+
+  </div>  <script src="./js/leave-request.js"></script></body>
+</html>

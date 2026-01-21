@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Lead Dashboard</title>
+  <link rel="stylesheet" href="./css/teamlead-dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="topbar" id="welcomeText"></header>
+
+<section class="dashboard">
+
+  <div class="chart-card">
+    <h3>Team Attendance Overview</h3>
+    <canvas id="teamAttendanceChart"></canvas>
+  </div>
+
+  <div class="card" onclick="goToLeaves()">
+    <h3>Total Leave Requests</h3>
+    <p id="leaveCount">2</p>
+  </div>
+
+  <div class="member-card">
+    <h3>Team Members</h3>
+    <ul id="memberList"></ul>
+  </div>
+
+</section>
+
+<script src="./js/teamlead-dashboard.js"></script>
+</body>
+</html>

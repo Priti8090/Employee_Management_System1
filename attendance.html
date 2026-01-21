@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance</title>
+  <link rel="stylesheet" href="./css/attendance.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="topbar">Attendance Management</header>
+
+<section class="container">
+
+  <div class="card">
+    <h3>Mark Today’s Attendance</h3>
+    <button id="inBtn">Mark IN Time</button>
+    <button id="outBtn" disabled>Mark OUT Time</button>
+    <p id="msg"></p>
+  </div>
+
+  <div class="card">
+    <h3>Check Attendance by Date</h3>
+    <input type="date" id="datePicker" />
+    <button onclick="checkDateAttendance()">View</button>
+    <p id="inStatus"></p>
+    <p id="outStatus"></p>
+  </div>
+
+  <div class="card">
+    <h3>Monthly Attendance Summary</h3>
+    <canvas id="monthlyChart"></canvas>
+  </div>
+
+</section>
+
+<script src="./js/attendance.js"></script>
+<div class="popup" id="popup">
+  <div class="popup-box">
+    <h3>Success 🎉</h3>
+    <p>Your IN time attendance marked successfully.</p>
+    <p>Please come after 6 hours for OUT time attendance.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+</body>
+</html>

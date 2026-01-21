@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./css/admin-dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="topbar">Admin Dashboard</header>
+
+<section class="dashboard">
+
+  <div class="card" onclick="goToTeams()">
+    <h3>Total Employee</h3>
+    <p id="teamCount">7</p>
+  </div>
+
+  <div class="card" onclick="goToLeaves()">
+    <h3>Pending Leaves</h3>
+    <p id="leaveCount">0</p>
+  </div>
+
+  <div class="chart-card">
+    <h3>Attendance Summary</h3>
+    <canvas id="attendanceChart"></canvas>
+  </div>
+
+  <div class="chart-card">
+    <h3>Salary Overview</h3>
+    <canvas id="salaryChart"></canvas>
+  </div>
+
+</section>
+
+<script src="./js/admin-dashboard.js"></script>
+</body>
+</html>

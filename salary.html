@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Salary View</title>
+  <link rel="stylesheet" href="./css/salary.css" />
+</head>
+<body>
+
+<div class="salary-container">
+  <h2 class="title">Monthly Salary Slip</h2>
+
+
+  <div class="employee-info">
+    <p><strong>Name:</strong> <span id="empName"></span></p>
+    <p><strong>Employee ID:</strong> <span id="empId"></span></p>
+    <p><strong>Month:</strong> <span id="salaryMonth"></span></p>
+  </div>
+
+  <div class="salary-card">
+    <h3>Salary Breakdown</h3>
+
+    <div class="row">
+      <span>Basic Salary</span>
+      <span>₹ <span id="basicSalary"></span></span>
+    </div>
+
+    <div class="row">
+      <span>Performance Bonus</span>
+      <span>₹ <span id="bonus"></span></span>
+    </div>
+
+    <div class="row">
+      <span>Attendance Deduction</span>
+      <span class="deduction">- ₹ <span id="deduction"></span></span>
+    </div>
+
+    <hr />
+
+    <div class="row total">
+      <span>Net Salary</span>
+      <span>₹ <span id="netSalary"></span></span>
+    </div>
+  </div>
+
+  <div class="attendance-summary">
+    <h3>Attendance Linked Calculation</h3>
+    <p>Present Days: <strong><span id="presentDays"></span></strong></p>
+    <p>Absent Days: <strong><span id="absentDays"></span></strong></p>
+    <p>Attendance %: <strong><span id="attendancePercent"></span>%</strong></p>
+  </div>
+
+  <button class="back-btn" onclick="goBack()">⬅ Back to Dashboard</button>
+</div>
+
+<script src="./js/salary.js"></script>
+</body>
+</html>
